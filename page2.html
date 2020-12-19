@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_container">
+        <h1>
+          <div class="title">
+            <span>ROCK</span>
+            <br />
+            <span>PAPER</span>
+            <br />
+            <span>SCISSORS</span>
+          </div>
+        </h1>
+        <div>
+          <button id="back">Home Page</button>
+          <div class="popup" onclick="rules()">
+            <button class="rules" id="rules">How to play</button>
+
+            <span class="popuptext" id="popupText">
+              The game consist of 2 players each choose either Rock, Paper,
+              Scissor.
+              <ul>
+                <li>Rock beats Scissor.</li>
+                <li>Scisoor beats Paper.</li>
+                <li>Paper beats Rock.</li>
+              </ul>
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="main">
+      <div class="container">
+        <button class="rock" type="button" onclick="play('rock')">
+          <img id="gameimg" src="Rock.jpg" />
+        </button>
+        <button class="paper" type="button" onclick="play('paper')">
+          <img id="gameimg" src="Paper.jpg" />
+        </button>
+        <button class="scissors" type="button" onclick="play('scissors')">
+          <img id="gameimg" src="Scissor.jpg" />
+        </button>
+        <br />
+        <br />
+        <div class="displayChoices">
+          <span id="p1result"></span> <span id="p2result"></span>
+          <h2 id="results"></h2>
+        </div>
+
+        <div class="scorebox">
+          <h2>Score</h2>
+          <div class="score-num"><span id="player1">0</span> <br />Player1</div>
+          <div class="score-divider"><span>-</span></div>
+          <div class="score-num"><span id="player2">0</span> <br />player2</div>
+        </div>
+
+        <button type="reset" value="reset" id="reset" onclick="playAgain()">
+          Play Again
+        </button>
+      </div>
+    </div>
+    <script>
+      document.getElementById("back").onclick = function () {
+        location.href =
+          "file:///Users/mac/Desktop/work/project1/Azzah_Project1/main.html";
+      };
+    </script>
+  </body>
+</html>

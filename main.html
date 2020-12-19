@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_container">
+        <h1>
+          <div class="title">
+            <span>ROCK</span>
+            <br />
+            <span>PAPER</span>
+            <br />
+            <span>SCISSORS</span>
+          </div>  </div>
+        </h1>
+      <div> 
+          <br><br><br>
+          <br><br><br>
+      <h2 class="userchoice">How would you like to play?</h2>
+      <button id="page1">with computer</button>
+      <button id="page2">with another player</button>
+  
+
+      </div>
+      <script>
+          document.getElementById("page1").onclick=function(){
+              location.href="file:///Users/mac/Desktop/work/project1/Azzah_Project1/page1.html";
+          }
+          document.getElementById("page2").onclick=function(){
+              location.href="file:///Users/mac/Desktop/work/project1/Azzah_Project1/page2.html";
+          }
+      </script>
+  </body>
+</html>
